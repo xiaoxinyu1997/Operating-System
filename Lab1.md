@@ -48,16 +48,20 @@ We assume that you are installing the toolchain into /usr/local on a modern Ubun
 
 First, clone the repository for the RISC-V GNU Compiler Toolchain:
 ```
-$ git clone  https://gitee.com/mirrors/riscv-gnu-toolchain
-$ cd riscv-gnu-toolchain
-# remove the empty directories
-$ rm -rf riscv-*
-$ git clone -b upstream https://gitee.com/mirrors/riscv-newlib newlib
-$ git clone -b riscv-glibc-2.29 https://gitee.com/mirrors/riscv-glibc glibc
-$ git clone -b riscv-gcc-9.2.0-rvv https://gitee.com/mirrors/riscv-gcc gcc
-$ git clone https://gitee.com/mirrors/riscv-dejagnu dejagnu
-$ git clone -b rvv-0.8.x https://gitee.com/mirrors/riscv-binutils-gdb binutils
-$ git clone -b fsf-gdb-8.3-with-sim https://gitee.com/mirrors/riscv-binutils-gdb gdb
+git clone  https://gitee.com/mirrors/riscv-gnu-toolchain
+cd riscv-gnu-toolchain
+rm -rf newlib
+rm -rf glibc
+rm -rf gcc
+rm -rf dejagnu
+rm -rf binutils
+rm -rf gdb
+git clone -b upstream https://gitee.com/mirrors/riscv-newlib newlib
+git clone -b riscv-glibc-2.29 https://gitee.com/mirrors/riscv-glibc glibc
+git clone -b riscv-gcc-9.2.0-rvv https://gitee.com/mirrors/riscv-gcc gcc
+git clone https://gitee.com/mirrors/riscv-dejagnu dejagnu
+git clone -b rvv-0.8.x https://gitee.com/mirrors/riscv-binutils-gdb binutils
+git clone -b fsf-gdb-8.3-with-sim https://gitee.com/mirrors/riscv-binutils-gdb gdb
 
 
 ```
@@ -67,7 +71,6 @@ $ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-d
 ```
 Configure and build the toolchain:
 ```
-$ cd riscv-gnu-toolchain
 $ ./configure --prefix=/usr/local
 $ sudo make
 $ cd ..
