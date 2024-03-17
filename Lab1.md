@@ -52,12 +52,12 @@ $ git clone  https://gitee.com/mirrors/riscv-gnu-toolchain
 $ cd riscv-gnu-toolchain
 # remove the empty directories
 $ rm -rf riscv-*
-$ git clone -b upstream git@gitee.com:mirrors/riscv-newlib.git
-$ git clone -b riscv-glibc-2.29 git@gitee.com:mirrors/riscv-glibc.git
-$ git clone -b riscv-gcc-9.2.0-rvv git@gitee.com:mirrors/riscv-gcc.git
-$ git clone git@gitee.com:mirrors/riscv-dejagnu.git
-$ git clone -b rvv-0.8.x git@gitee.com:mirrors/riscv-binutils-gdb.git riscv-binutils
-$ git clone -b fsf-gdb-8.3-with-sim git@gitee.com:mirrors/riscv-binutils-gdb.git riscv-gdb
+$ git clone -b upstream https://gitee.com/mirrors/riscv-newlib
+$ git clone -b riscv-glibc-2.29 https://gitee.com/mirrors/riscv-glibc
+$ git clone -b riscv-gcc-9.2.0-rvv https://gitee.com/mirrors/riscv-gcc
+$ git clone https://gitee.com/mirrors/riscv-dejagnu
+$ git clone -b rvv-0.8.x https://gitee.com/mirrors/riscv-binutils-gdb riscv-binutils
+$ git clone -b fsf-gdb-8.3-with-sim https://gitee.com/mirrors/riscv-binutils-gdb riscv-gdb
 
 
 ```
