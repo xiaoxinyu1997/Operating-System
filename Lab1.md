@@ -48,7 +48,7 @@ We assume that you are installing the toolchain into /usr/local on a modern Ubun
 
 First, clone the repository for the RISC-V GNU Compiler Toolchain:
 ```
-$ git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
+$ git clone  https://gitee.com/mirrors/riscv-gnu-toolchain
 ```
 Next, make sure you have the packages needed to compile the toolchain:
 ```
